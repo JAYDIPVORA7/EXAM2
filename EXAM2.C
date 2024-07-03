@@ -13,29 +13,29 @@ int main()
     int size;
 
     printf("Enter the size of the arrayays=> ");
-    scanf("%d", &size);
+    scanf("%d",&size);
 
     int array1[size],array2[size],result[size];
 
     printf("Enter elements of the first arrayay=> \n");
-    for (int i = 0; i < size; i++) 
+    for (int i=0;i<size;i++) 
 	{
-        scanf("%d", &array1[i]);
+        scanf("%d",&array1[i]);
     }
 
-    printf("Enter elements of the second arrayay:\n");
-    for (int i = 0; i < size; i++) 
+    printf("Enter elements of the second arrayay=> \n");
+    for (int i=0;i<size;i++) 
 	
 	{
-        scanf("%d", &array2[i]);
+        scanf("%d",&array2[i]);
     }
 
-    add_arrayays(array1, array2, result, size);
+    add_arrays(array1,array2,result,size);
 
-    printf("Resultant arrayay after addition:\n");
+    printf("Resultant arrayay after addition=> \n");
     for (int i = 0; i < size; i++) 
 	{
-        printf("%d ", result[i]);
+        printf("%d", result[i]);
     }
     printf("\n");
 
